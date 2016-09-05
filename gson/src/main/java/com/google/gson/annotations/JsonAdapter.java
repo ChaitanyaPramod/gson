@@ -18,6 +18,8 @@ package com.google.gson.annotations;
 
 import com.google.gson.TypeAdapter;
 import com.google.gson.TypeAdapterFactory;
+
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -87,6 +89,7 @@ import java.lang.annotation.Target;
  * @author Jesse Wilson
  */
 // Note that the above example is taken from AdaptAnnotationTest.
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD})
 public @interface JsonAdapter {
